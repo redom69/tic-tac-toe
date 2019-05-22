@@ -1,0 +1,27 @@
+<html>
+	<body>
+	<h1>Estadisticas de los jugadores</h1>
+		<table border="1">
+			<tr>
+				 <td>Etiqueta</td>
+				 <td>Nombre</td>
+				 <td>Identificador</td>
+				 <td>Partidas Ganadas</td>
+				 <td>Partidas Perdidas</td>
+				 <td>Partidas Empatadas</td>
+			 </tr>
+		{{#jugadores}}
+			 <tr>
+				 <td>{{label}}</td>
+				 <td>{{name}}</td>
+				 <td>{{id}}</td>
+				 <td>{{pganadas}}</td>
+				 <td>{{pperdidas}}</td>
+				 <td>{{pempatadas}}</td>
+			 </tr>
+		 {{/jugadores}}
+		 </table>
+		 <br/>
+		 <a href="/">Pagina Principal</a>
+	</body>
+</html>
